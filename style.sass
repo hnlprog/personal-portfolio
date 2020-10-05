@@ -1,3 +1,58 @@
-// 1 media query
-// welcome section height = viewport height (100vh)
-// navbar always at top (position: sticky; top: 0)
+body
+  margin: 0
+
+#header
+  width: 100%
+  position: sticky
+  top: 0
+  #navbar
+    ol
+      display: flex
+      justify-content: flex-end
+      margin: 0
+      padding: 0
+      li
+        margin: 0.5em 1em
+        list-style-type: none
+    @media (max-width: 500px)
+      ol 
+        justify-content: center 
+  
+
+#welcome-section
+  height: 100vh
+  width: auto
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+
+#projects
+  width: 100%
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+  justify-content: center
+  align-content: center
+
+.project-grid
+  display: flex
+  flex-direction: column
+  padding: 1em
+  .project-title
+    margin: 0
+    padding: 16px
+    background: #21252B
+    color: #CBCBCB
+
+.project-img
+  max-width: 500px
+        
+#footer
+  display: flex
+  justify-content: flex-end
+  background: #21252B
+  padding: 1em 2em 1em 2em
+  margin-top: 1em
+  #profile-link, p
+    color: #CBCBCB

@@ -1,24 +1,45 @@
-html　
+html
   head
-    link rel="stylesheet" href="style.css"/
-    title Porfolio Page
+    link rel="stylesheet" href="style.css"
+    title Personal Portfolio
 
   body
-    header
-      nav#navbar
+    header#header
+      nav#navbar 
         ol
+          li Jump to
+          li 
+            a[href="#welcome-section"] Welcome
           li
+            a[href="#projects"] Projects
           li
-          li
+            a[href="#footer"] fCC
 
     main
       section#welcome-section 
-        h1#welcome-message
+        h1#welcome-message Hann
+        p#subtitle Personal Portfolio
 
       section#projects 
-        h1#project-message
-        div.project-message
-          a.project.link[href="http://" target="_blank" rel="noopener noreferrer"]
+        h1#projects-message 
+        div.project-grid
+          a.project-link[href="https://codepen.io/hnlprog/full/BaKOGXj" target="_blank" rel="noopener noreferrer"]
+            img.project-img[src="https://raw.githubusercontent.com/hnlprog/personal-portfolio/main/tribute-page.png"]
+          p.project-title Tribute to Matz
+        div.project-grid
+          a.project-link[href="https://codepen.io/hnlprog/full/jOqQaLg" target="_blank" rel="noopener noreferrer"]
+            img.project-img[src="https://raw.githubusercontent.com/hnlprog/personal-portfolio/main/survey-form.png"]
+          p.project-title Survey Template
+        div.project-grid
+          a.project-link[href="https://codepen.io/hnlprog/full/KKzJdVG" target="_blank" rel="noopener noreferrer"]
+            img.project-img[src="https://raw.githubusercontent.com/hnlprog/personal-portfolio/main/landing-page.png"]
+          p.project-title Dango Landing Page
+        div.project-grid
+          a.project-link[href="https://codepen.io/hnlprog/full/xxVoYPd" target="_blank" rel="noopener noreferrer"]
+            img.project-img[src="https://raw.githubusercontent.com/hnlprog/personal-portfolio/main/technical-documentation.png"]
+          p.project-title Elixir Documentation
 
-    footer
-      a#profile-link[href="http://" target="_blank"]
+    footer#footer
+      p 
+        | Find me at: 
+        a#profile-link[href="https://www.freecodecamp.org/fcc39c9c197-aa5a-4199-82f8-9ad0ce15e99a" target="_blank"] fCC
