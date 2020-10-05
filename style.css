@@ -53,6 +53,10 @@ body {
   color: #CBCBCB;
 }
 
+.project-link {
+  max-height: 439.5px;
+}
+
 .project-img {
   max-width: 500px;
 }
